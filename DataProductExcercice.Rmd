@@ -1,0 +1,17 @@
+---
+title: "Plotly Markdown Excercice"
+author: "Gustavo T Peconick"
+date: "09/03/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly,ggplot2)
+```
+
+## Less is more
+
+```{r cars}
+ggplotly(ggplot(mtcars,aes(x=hp,y=mpg,size=disp,color=cyl))+geom_point())
+```
