@@ -1,5 +1,5 @@
 ---
-title: "Plotly Markdown Excercice"
+title: "Plotly Markdown Excercise"
 author: "Gustavo T Peconick"
 date: "09/03/2019"
 output: html_document
@@ -14,4 +14,6 @@ library(plotly,ggplot2)
 
 ```{r cars}
 ggplotly(ggplot(mtcars,aes(x=hp,y=mpg,size=disp,color=cyl))+geom_point())
+
+
 ```
